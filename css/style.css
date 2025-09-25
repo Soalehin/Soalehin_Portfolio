@@ -3,6 +3,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+
 /* styling menu icon */
 .nav-menu{
     border: none;
@@ -10,6 +11,7 @@ body{
     font-size: 1.5rem;
     color: #fca61f;
 }
+
 /* styling navbar links  */
 .navbar-nav a{
     color: black;
@@ -30,18 +32,20 @@ body{
     background: #fca61f;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
+}
 .navbar-nav a:hover:after { 
     width: 100%; 
     left: 0; 
-  }
-  /* styling contact btn  */
+}
+
+/* styling contact btn  */
 .c-btn{
     border: none;
     background: #fca61f;
     color: #fff;
     font-size: 1.2rem;
 }
+
 /* styling home section starts */
 .home{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
@@ -95,6 +99,7 @@ body{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /* adding animation to home section image  */
 .home img{
     animation: floatimg 4s ease-in-out infinite;
@@ -224,7 +229,101 @@ body{
     font-size: 1.3rem;
 }
 
-/* Portfolio  section starts */
+/* Skill container styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Make sure circles wrap to the next line if needed */
+  justify-content: center; /* Center the circles */
+  gap: 15px; /* Space between each circle */
+  margin-top: 20px;
+  padding-bottom: 20px; /* Add some space below */
+}
+
+.skill-box {
+  flex: 1 1 120px; /* Ensures the circles are evenly spaced */
+  max-width: 120px; /* Max width for each circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for circle boxes */
+.circle-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle-box span {
+  font-size: 14px;
+  text-align: center;
+  color: #3f396d;
+  font-weight: 500;
+}
+
+/* Skill container styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.skill-box {
+  flex: 1 1 120px; 
+  max-width: 120px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #3f396d;
+  padding: 10px;
+  transition: all 0.3s ease; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* On Hover, the circle slightly enlarges */
+.circle-box:hover {
+  transform: scale(1.05);
+}
+
+.circle-box span {
+  font-size: 14px;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .circle-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle-box span {
+    font-size: 12px;
+  }
+}
+
+/* work  section starts */
 .portfolio .card {
     height: 100%;
     display: flex;
@@ -245,6 +344,44 @@ body{
     height: auto;        
     object-fit: contain; 
 }
+/* General button styling */
+.filter-item {
+  border: 2px solid transparent;
+  background-color: #f4f4f4;
+  color: #3f396d;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.filter-item:hover {
+  background-color: #6f34fe;
+  color: #fff;
+  border-color: #6f34fe;
+  transform: translateY(-2px);
+}
+
+/* Active button styling */
+.filter-item.active {
+  background-color: #6f34fe;
+  color: #fff;
+  border-color: #6f34fe;
+  transform: translateY(-2px);
+}
+
+/* Filter item spacing */
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 
 /* testimonial section starts */
 .testimonial img:hover{
@@ -432,4 +569,32 @@ footer .link-group a:hover{
 html, body {
   max-width: 100%;
   overflow-x: hidden; 
+}
+
+/* Styling for work filter buttons */
+#myBtnContainer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.filter-item {
+    border: none;
+    background-color: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 30px; 
+    margin: 0 10px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.filter-item:hover {
+    background-color: #6f34fe; 
+    transform: translateY(-5px); 
+}
+
+/* Making the filter buttons more noticeable on hover */
+.filter-item:active {
+    transform: translateY(0); 
 }

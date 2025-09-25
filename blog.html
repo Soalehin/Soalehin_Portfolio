@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Soalehin Priya</title>
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="index.html" style="color: #3f396d">
+          Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonial</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a href="contact.html" class="btn btn-primary ms-3 rounded-pill px-4">Contact</a>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- blog section -->
+    <section class="blog mt-5 pb-5">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <!-- Blog Card 1 -->
+        <div class="blogpost col-md-4 col-10 mt-2">
+          <div class="card">
+            <img src="images/Ruthba.jpg" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body px-4">
+              <small>By Soalehin Priya</small><span class="ms-3">Mar 8, 2020</span>
+              <h4 class="card-title"><a href="https://www.facebook.com/share/12CfGHcZ8Yi/">Establishing of RUTHBA</a></h4>
+              <p class="text-muted">This is my very own Business Page.</p>
+              <a href="https://www.facebook.com/share/12CfGHcZ8Yi/" class="read-more-btn link">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
+          <div class="card">
+            <img src="images/IIUC.jpg" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body px-4">
+              <small>By Soalehin Priya</small><span class="ms-3">Aug 1, 2021</span>
+              <h4 class="card-title"><a href="https://www.facebook.com/share/19zQ55jXhj/">Starting CSE journey!</a></h4>
+              <p class="text-muted">The journey has only began through the end of graduation.</p>
+              <a href="https://www.facebook.com/share/19zQ55jXhj/" class="read-more-btn link">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
+          <div class="card">
+            <img src="images/service-icon2.png" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body px-4">
+              <small>By Soalehin Priya</small><span class="ms-3">September, 2025</span>
+              <h4 class="card-title"><a href="https://www.linkedin.com/in/soalehin-priya-651346372/">What's next?</a></h4>
+              <p class="text-muted">A lot coming next through my research & dedicated hard work.</p>
+              <a href="https://www.linkedin.com/in/soalehin-priya-651346372/" class="read-more-btn link">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <!-- Modal 1 -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content p-3">
+          <button type="button" class="btn-c rounded-pill ms-auto" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+          <div class="modal-body px-4">
+            <img src="images/2048game.png" class="img-fluid" alt=""/>
+            <div class="content mt-3">
+              <small>By Soalehin Priya</small><span class="text-muted ms-2">September, 2025</span>
+              <h4 class="card-title mt-3">Social Contacts</h4>
+              <div class="social-links mt-4">
+                <a href="www.google.com" class="btn rounded-pill dribble"><i class="bi bi-dribbble"></i></a>
+                <a href="#" class="btn rounded-pill whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/soalehin.priya" class="btn rounded-pill behance"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content p-3">
+          <button type="button" class="btn-c rounded-pill ms-auto" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+          <div class="modal-body">
+            <h4>Leave A Comment</h4>
+            <form class="mt-3">
+              <input type="text" class="form-control mb-2" placeholder="Name" />
+              <input type="email" class="form-control mb-2" placeholder="E-mail" />
+              <input type="text" class="form-control mb-2" placeholder="Mobile No." />
+              <textarea class="form-control mb-2" placeholder="Message" rows="4"></textarea>
+              <button class="c-btn h-btn py-2 px-4 rounded-pill">Submit</button>
+            </form>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content p-3">
+          <button type="button" class="btn-c rounded-pill ms-auto" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+          <div class="modal-body px-4">
+            <img src="images/deadlock.png" class="img-fluid" alt=""/>
+            <div class="content mt-3">
+              <small>By Soalehin Priya</small><span class="text-muted ms-2">Mar 8, 2022</span>
+            </div>
+            <form class="mt-3">
+              <input type="text" class="form-control mb-2" placeholder="Name" />
+              <input type="email" class="form-control mb-2" placeholder="E-mail" />
+              <textarea class="form-control mb-2" placeholder="Message" rows="4"></textarea>
+              <button class="c-btn h-btn py-2 px-4 rounded-pill">Submit</button>
+            </form>
+          </div>
+        </div></div>
+      </div>
+    </section>
+    <!-- blog section ends -->
+
+    <!-- footer -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio of Soalehin</h3>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href="https://www.linkedin.com/in/soalehin-priya-651346372/" target="_blank">
+          <button class="rounded-pill linkedin">
+            <i class="bi bi-linkedin"></i>
+          </button>
+        </a>
+        <a href="https://wa.me/8801825370992" target="_blank">
+          <button class="rounded-pill whatsapp">
+            <i class="bi bi-whatsapp"></i>
+          </button>
+        </a>
+        <a href="https://www.facebook.com/soalehin.priya" target="_blank">
+          <button class="rounded-pill behance">
+            <i class="bi bi-facebook"></i>
+          </button>
+        </a>
+      </div>
+      <hr class="text-muted my-4" />
+      <p>Copyright 2025 Portfolio of Soalehin Priya | All Rights Reserved.</p>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, offset: 50 });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
